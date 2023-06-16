@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radio Button Example</title>
+  </head>
+  <body>
+    <h2>Select ID Type:</h2>
+      <form action="/requestData " method="POST">
+        <input type="radio" id = "wallet-address" name="wallet-address" value="wallet-address"/>
+        <label for="wallet-address">지갑 주소</label>
+        <input type="radio" id = "personal-id" name="personal-id" value="personal-id"/>
+        <label for="personal-id">개인 ID</label>
+        <br>
+        <p> 선택하신 것에 해당하는 값을 아래에 작성해주세요! </p>
+        <div class="form-group">
+          <input type="text" class="form-control" name="user-response"/>
+        </div>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+      </form>      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/server.js"></script>
+  </body>
+</html>
